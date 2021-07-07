@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jun  5 20:08:58 2021
+Created on Sat July  5 20:08:58 2021
 
-@author: User
+@author: Akash Chandra Behera
 """
-
+import numpy
 from kivymd.app import MDApp
 from kivy.lang import Builder
 from kivy.properties import ObjectProperty
@@ -84,7 +84,6 @@ class ValueEstimator(MDApp):
         
         #Let's do lagrange interpolation
         
-        import numpy
         ll=(self.root.in_class.text).split(",")
         lx=(self.root.ids.xtt.text).split(",")
         #Now x points must be unique
